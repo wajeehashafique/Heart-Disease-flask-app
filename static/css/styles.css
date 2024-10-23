@@ -1,0 +1,94 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Limit maximum width for larger screens */
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Primary color for heading */
+    font-size: 2em; /* Increase heading size */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057; /* Darker shade for better readability */
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 2px solid #ced4da; /* Slightly thicker border */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transition effect */
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Add transition effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d1ecf1; /* Light blue background */
+    border-left: 6px solid #0c5460; /* Dark blue border */
+    color: #0c5460; /* Dark blue text */
+    display: none;
+    border-radius: 4px;
+    font-size: 1.2em; /* Increase font size for results */
+    text-align: center; /* Center align result text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller heading size on small screens */
+    }
+}
+
